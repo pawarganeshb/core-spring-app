@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<!-- bean definitions here -->
+	<bean id="item1" class="com.app.Items">
+		<property name="itemName" value="Iphone"></property>
+		<property name="ItemId" value="13"></property>
+		<property name="price" value="69599"></property>
+		<property name="name">
+			<set>
+				<value>Samsang</value>
+				<value>Nokia</value>
+				<value>Realme</value>
+				<value>Redmi</value>
+				<value>POCO</value>
+				<value>Geonii</value>
+				<value>Vivo</value>
+			</set>
+		</property>
+	</bean>
+
+	<bean id="item2" class="com.app.ItemDetail">
+		<property name="gst" value="18"></property>
+		<property name="costPrice" value="70599"></property>
+		<property name="sellPrice" value="72099"></property>
+		<property name="isAvailabe" value="true"></property>
+
+	</bean>
+
+</beans>
